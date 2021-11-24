@@ -19,6 +19,6 @@ p {
     color: tomato; }
 
 a {
-  color: grey;
+  color: #ee0a74;
   padding: clamp(1rem, 3vmin, 2rem);
   text-decoration: none; }

@@ -1,0 +1,6 @@
+@mixin common {
+  border: $frame-border;
+  border-radius: $border-radius;
+  background-color: $frame-background;
+  padding: $padding;
+}
