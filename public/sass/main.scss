@@ -1,4 +1,4 @@
-$primary-color: black;
+$primary-color: rgb(255, 255, 255);
 $secondary-color: grey;
 $contrast-color: tomato;
 $border-radius: 20px;
@@ -8,25 +8,29 @@ $white-60: rgba(255, 255, 255, 0.6);
 $padding: clamp(1rem, 3vmin, 2rem);
 $font-size-normal: clamp(1.2rem, 2vmin, 2rem);
 
-body {
-  background-color: $primary-color;
-}
-
-h1 {
-  color: $contrast-color;
+@mixin common {
   border: $frame-border;
   border-radius: $border-radius;
   background-color: $frame-background;
   padding: $padding;
+}
+
+body {
+  background-color: black;
+}
+
+.heading {
+  color: $contrast-color;
+  @include common;
 }
 
 p {
   color: $primary-color;
-  border: $frame-border;
-  background-color: $frame-background;
-  border-radius: $border-radius;
-  padding: $padding;
   font-size: $font-size-normal;
+  @include common;
+  a {
+    color: $contrast-color;
+  }
 }
 
 a {
